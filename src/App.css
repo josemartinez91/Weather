@@ -8,11 +8,13 @@
   width: 100%;
   justify-content: center;
   margin: 20px 0;
+ 
 }
 
 .card-container{
   box-shadow: 2px 2px 2px 2px #888888;
   width: 300px;
+  background-color: white;
 }
 .card-container h1{
   color: var(--blue-color);
@@ -23,4 +25,11 @@
 }
 .card-container button{
   margin-bottom: 10px;
+  width: 5rem;
+  height: 2rem;
+  color: white;
+  background-color: orange;
+  border: none;
+  cursor: pointer;
+  border-radius: 1rem;
 }

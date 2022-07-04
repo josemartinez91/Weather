@@ -24,10 +24,11 @@ const Weather = () => {
                 )
                 
           }
-        navigator.geolocation.getCurrentPosition(success);
+          const error = () => alert("Acceso a la  ubicacion denegada");
+        navigator.geolocation.getCurrentPosition(success,error);
     },[])
     
-    console.log(weather)
+  document.body.style = 'background: gray'
     const toggleIsOn = () => {
         if(isOn){
             setTemperature(Math.round(temperature * 1.8000 + 32) )
