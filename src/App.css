@@ -1,0 +1,26 @@
+
+:root{
+  --blue-color: #009EFA;
+}
+.App {
+  text-align: center;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.card-container{
+  box-shadow: 2px 2px 2px 2px #888888;
+  width: 300px;
+}
+.card-container h1{
+  color: var(--blue-color);
+}
+.card-container p span{
+  font-weight: 600;
+  color: var(--blue-color);
+}
+.card-container button{
+  margin-bottom: 10px;
+}
