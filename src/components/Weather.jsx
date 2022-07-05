@@ -45,9 +45,9 @@ const Weather = () => {
             <p><span>{weather.name}, {weather.sys?.country}</span></p>
             <p><span>{weather.weather?.[0].description}</span></p>
             <img src={iconUrl}  alt="" />
-            <p><span>Wind speed:</span> {weather.wind?.speed}</p>
+            <p><span>Wind speed:</span> {weather.wind?.speed}m/s</p>
             <p><span>Clouds:</span> {weather.clouds?.all}%</p>
-            <p><span>Pressure:</span> {weather.main?.pressure}</p>
+            <p><span>Pressure:</span> {weather.main?.pressure} mb</p>
             <p >{temperature} {isOn ? ` °C` : `°F` }</p>
          
             <button onClick={toggleIsOn}>°C / °F</button>
